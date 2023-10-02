@@ -1,0 +1,1270 @@
+/* Estilos CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,800;0,900;1,100;1,200;1,800;1,900&family=Nunito:ital,wght@0,200;1,200&family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=Raleway:ital,wght@0,100;0,400;0,800;0,900;1,100;1,400;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+}
+
+body {
+    background-color: #86b7fa;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+    background-color: #f0faff;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+/******************************* NAV BAR *******************************/
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    height: 150px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.header-menu {
+    background-color: #003366;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.izquierda {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;    
+}
+
+.escudo img {
+    height: 50px;
+}
+
+.izquierda p {
+    color: white;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.primergrande {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.contenido-palabras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 50px;
+    margin-bottom: 0; /* para contrarestrar bootstrap */
+}
+
+.menu a:hover{
+    background: rgb(6,143,213);
+    background: linear-gradient(90deg, rgba(6,143,213,0.7372198879551821) 5%, rgba(53,158,240,0.7400210084033614) 95%);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+.item-home a{
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+.menu .item-lista {
+    height: 100%;
+    background-color: #3399CC;
+    display: inline-block;
+    height: 100%;
+    gap: 1rem;
+    object-fit: cover;
+}
+
+.item-lista a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    padding: 20px;
+}
+
+
+.submenu {
+    background-color: #1C699D;
+    position: absolute;
+    padding: 0;
+    display: none;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    width: min-content;
+}
+
+.submenu a {
+    color: white;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #4388ef;
+}
+
+.item-lista:hover .submenu {
+    display: block;
+}
+
+.icon__menu {
+    display: none;
+}
+
+#check__menu {
+    display: none;
+}
+
+/*********************************** MAIN *************************************************/
+
+main h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+main h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+main h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/****************************** HISTORIA RESUMEN ******************************************/
+
+
+.historia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 50px 10px;
+}
+
+.descripcion {
+    flex: 1;
+    padding: 10px;
+}
+
+.descripcion h1 {
+    color: #ffffffdb;
+}
+
+.descripcion p {
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/******************** MINI PLANTEL *********************************/
+
+.miniplantel {
+    padding: 0px 10px 30px 10px;
+}
+
+.miniplantel h2{
+    color: black;
+}
+
+.jugadores-contenedor {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    padding: 5px;
+    background: rgb(115,217,255);
+    background: linear-gradient(90deg, rgba(115,217,255,0.7540266106442577) 20%, rgba(255,255,255,0.7596288515406162) 50%, rgba(115,217,255,0.7456232492997199) 80%);
+    text-align: center;
+    justify-content: space-between;
+    border: 3px solid #2270e9;;
+    gap: 2rem;
+}
+
+.jugador {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.jugador img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/****************************************** Titulos Ganados **************************************/
+
+.titulosG {
+    border: 1px solid rgb(183, 170, 255, 0.5);
+    margin: 20px 10px 20px 10px;
+    background: linear-gradient(90deg, rgb(183 170 255 / 50%) 20%, rgb(255 255 255 / 80%) 50%, rgb(183 170 255 / 50%) 80%);
+}
+
+
+.titulosG h2 {
+    font-size: 2rem;
+}
+
+
+.trofeos-contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trofeos-cuadraditos {
+    width: 250px;
+    height: 250px;
+    border: 2px solid blue;
+    margin-bottom: 30px
+}
+
+.trofeos-cuadraditos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trofeos-cuadraditos p {
+    font-weight: bold;
+}
+
+.totales-contenedor {
+    border: 2px solid blue;
+    margin-top: 50px;
+}
+
+
+.titulosG h3 {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+.trofeos-listas {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.trofeos-listas li {
+    margin-bottom: 10px;
+    list-style-type: "🏆";
+}
+
+.trofeos-listas h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900; 
+    font-style: italic; 
+    font-size: 1.25rem;
+    margin-right: 5px;
+}
+
+
+.trofeos-listas p {
+    color: #411d71;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900; 
+    margin: 0; 
+}
+
+.up-index {
+    visibility: hidden;
+}
+
+/************************************ FOOTER ********************************************/
+
+footer {
+    background-color: #051041;
+    height: 100%;
+    padding: 0 20px; /* Espacio en los extremos del footer */
+}
+
+.footer-contenedor {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: center;
+    padding: 50px;
+}
+
+.racing-copy {
+    display: flex;
+    align-items: center;
+}
+
+.racing-copy h5 {
+    color: #8c86c5;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.aboutme {
+    display: flex;
+    align-items: center;
+}
+
+.aboutme p {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+
+.racing-redes {
+    display: flex;
+    align-items: center;
+}
+
+.racing-redes p {
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+/************************************* TORENO ********************************************************/
+
+
+/********************************************* FIXTURE {HTML} *****************************************/
+
+.fixture-titulo {
+    display: block;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    color: #120588;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+
+.fixture-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 10px 50px 10px;
+}
+
+
+.head-principal th {
+    background-color: #003366; 
+    color: white;
+}
+
+.head-secundario th {
+    background-color: #2270e9;
+    color: white;
+}
+
+.t-body{
+    background-color: #d3e6ff;
+}
+
+.fixture-fecha tbody tr td:nth-child(2) {
+    text-align: left;
+}
+
+.fixture-fecha tbody tr td:nth-child(5n) {
+    text-align: right;
+}
+
+.fixture-tbody-r {
+    background-color: white;
+}
+
+.fa-play {
+    color: #0054d7;
+    text-align: center;
+}
+
+
+.racing-dif{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.titulollave { 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulollave h2 {
+    color: #120588;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+
+.llave {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.llave h3 {
+    color: #1C699D;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.ronda {
+    width: 30%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #7dbbff;
+}
+
+.ronda td{
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+
+/***************************************POSICIONES HTML *********************************************/
+
+h1.titulo-posiciones{
+    padding: 20px;
+    text-align: center;
+    color: #120588;
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+}
+
+h2.LPFArgentina {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: #2e00ca;
+    padding: 20px 0px 0px 0px;
+}
+
+
+.zonas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 10px 50px 10px;
+}
+
+.zonaA h3, .zonaB h3 {
+    text-align: center;
+    color: #120588;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.zonas table tbody tr td:nth-child(2),
+.posicionesAnual table tbody tr td:nth-child(2) {
+    text-align: left;
+}
+
+.clasificados1 {
+    background-color: #0079ff;
+    list-style-type: "🏆";
+    margin-left: 20px;
+}
+
+
+.titulos-posiciones {
+    display: flex;
+    justify-content: center;
+}
+
+.titulos-posiciones h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: #2e00ca;
+}
+
+.posicionesAnual {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.tabla-general,
+.tabla-promedios {
+    width: 50%;
+}
+
+.condiciones {
+    width: 50%;
+}
+
+.clasificados2{
+    background-color: #98e19f;
+    list-style-type: "🏆";
+    margin-left: 20px;
+}
+
+.cmp1 {
+    background-color: #12931e;
+    list-style-type: "🥇";
+    margin-left: 20px;
+}
+
+.descenso {
+    background-color: #b20000;
+    list-style-type: "🔻";
+    margin-left: 20px;
+    color: white;    
+}
+
+.flechaup {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 999;
+    background-color: rgb(255 255 255 / 75%);
+    border-radius: 50px;
+}
+
+.flechaup a {
+    padding: 2px 0px;
+    font-size: 25px;
+    color: rgb(4 0 255 / 75%);
+}
+
+/************************************** COPA ARGENTINA {HTML}***************************************/
+.copaargentina img{
+    margin-bottom: -4px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/********************************************** GOLES {HTML} ********************************************/
+
+.goles_fecha {
+    margin: 20px 100px;
+    border: 2px solid white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: #ffffffc9;
+}
+
+.goles_fecha h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffffeb;
+    background-color: #6529ffd4;
+    width: 100%;
+}
+
+.video {
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.video h2 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #3100d7;
+    margin: 0;
+}
+
+.video p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #02003d;
+}
+
+
+/**************************************************************************************************************/
+/******************************************** FOTOS ***********************************************************/
+/************************************* FOTOS SOBRE EL CLUB ****************************************************/
+p {
+    margin-bottom: 0; /* para contrarrestrar bootstrap */
+}
+
+h1.foto_club {
+    text-align: center;
+    color: #0d008a;
+}
+
+.institucion {
+    padding: 20px;
+    margin: 30px 20px;
+    border: 2px solid #f3f3f3;
+    background: rgba(0, 156, 222, 0.9);
+}
+
+.grupo-imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.grupo-imagenes h2 {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-principal {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-principal img {
+  max-width: 100%;
+}
+
+.miniaturas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.miniaturas img {
+    max-width: 100%;
+}
+
+.descripcion-fotos {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.descripcion-fotos h3 {
+    color: white;
+    font-size: 1.30rem;
+}
+
+.descripcion-fotos p {
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #f6f6f6;
+}
+
+.miniaturas2 {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.miniaturas2 img {
+    max-width: 100%;
+}
+
+
+/******************************************* FOTOS DE PARTIDOS **********************************/
+
+.partidos_contenedor {
+    display: grid;
+    padding: 10px;
+    margin: 30px 20px;
+    border: 2px solid white;
+    background: rgb(122 122 255 / 90%);
+}
+
+.partidos_contenedor p {
+    margin-top: 10px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.partidos_contenedor img {
+    max-width: 100%;
+    height: auto;    
+}
+
+.partidos_contenedor h2 {
+    display: flex;
+    justify-content: center;
+    color: #00006b;
+    background-color: #f9f9ffe8;
+}
+
+.foto_resultado {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.fotos_fecha {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}    
+
+.foto {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.descr_partidos {
+    text-align: center;
+    background-color: #f9f9ffe8;
+}
+
+.descr_partidos p {
+    font-style: normal;
+    text-decoration: none;
+}
+
+h1.foto_part_titulo {
+    text-align: center;
+    color: #201448;
+}
+
+/***************************************************** FOTO PLANTES {HTML} *********************************************/
+
+h2.color_posc {
+    color: #1b1898;
+}
+
+.row {
+    margin-bottom: 2rem;
+}
+
+.row h1 {
+    color: blue;
+}
+
+.col,
+.col-xl-3,
+.col-md-6, 
+.col-sm-12 {
+    margin-bottom: 10px;
+}
+
+.col p, 
+.col-xl-3 p,
+.col-md-6 p,
+.col-sm-12 p {
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    background: #0c0c64;
+}
+
+.C-T {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.C-T p {
+    background: none;
+    color: black;
+}
+
+img.dirigente {
+    width: 250px;
+    height: 250px;
+}
+
+
+/****************************************************************************************************************/
+/************************************************** RESPONSIVE **************************************************/
+/****************************************************************************************************************/
+
+@media (max-width: 1300px){
+    .mini11 {
+        display: none;
+    }
+
+    .jugadores-contenedor {
+        gap: 1.5rem;
+    }
+}
+
+
+
+
+
+@media (max-width: 1200px){
+    .mini11,
+    .mini10,
+    .mini9 {
+        display: none;
+    }
+
+    .jugadores-contenedor {
+        gap: 1.5rem;
+    }
+}
+
+
+
+/*##################################################################*/
+@media (max-width: 1000px){
+
+    .mini8 {
+        display: none;
+    }
+
+    .jugadores-contenedor {
+        gap: 1.5rem;
+    }
+
+}
+
+
+
+
+/*##################################################################*/
+@media (max-width: 900px){
+    /***********fixture.html****************/
+    .zonas {
+        display: block;
+    }
+
+}
+
+
+
+
+/*##################################################################*/
+@media (max-width: 850px){
+    /*********index.html***********/
+    .mini7 {
+        display: none;
+    }
+    .trofeos-contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .trofeos-cuadraditos {
+            margin-bottom: 50px;
+    }        
+}
+
+
+
+
+/*##################################################################*/
+@media (max-width: 750px) {
+    /***************index.html********************/
+
+    .mini6 {
+        display: none;
+    }
+
+    .trofeos-contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /*****************fixture.html************************************/
+    .fixture-contenedor {
+        display: block;
+    }
+
+    .fixture-racing {
+        margin-bottom: 15px;
+    }
+
+
+}
+
+
+
+
+
+
+/*##################################################################*/
+@media (max-width: 600px){
+    /*******************NAV BAR********************/
+    .izquierda {
+        padding: 0 5px;    
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: column;
+        align-items: stretch;
+        position: absolute;
+        margin: 40px 0 0 0;
+        background: #003366ad;
+        gap: 0;
+        visibility: hidden;
+        z-index: 1;
+    }
+
+    .icon__menu-container {
+        display: flex;
+        flex-flow: column;
+        margin-right: 70px;
+        align-items: center;
+    }
+
+    .icon__menu {
+        display: flex;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        justify-content: center;
+        transition: transform 0.3s ease;
+    }
+
+    .submenu {
+        position: relative;
+        margin-top: 12px;
+    }
+
+    .menu .item-lista {
+        margin: 0.5rem;
+    }
+
+    .item-home {
+        display: flex;
+        justify-content: center;
+    }
+
+    .item-home a {
+        padding: 15px 35px;
+        background-color: #003366;
+        margin-top: 10px;
+    }
+
+
+    #check__menu:checked ~ .menu {
+        visibility: visible;
+    }
+
+
+    #check__menu:checked ~ .icon__menu-label .icon__menu {
+        transform: rotate(90deg);
+    }    
+
+    /**************index.html****************/
+    .historia {
+        display: block;
+    }
+
+    .jugadores-contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .trofeos-contenedor {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+
+    .up-index {
+        visibility: visible;
+    }
+
+    /***********posiciones.html****************/
+    .tabla-general,
+    .tabla-promedios {
+        width: auto;
+    
+    }
+
+    .condiciones {
+        width: auto;
+    }
+
+    .zonas,
+    .posicionesAnual {
+        font-size: 12px;
+    }
+
+
+    /*************Goles.html*******************/
+
+    .goles_fecha {
+        margin: 20px 30px;
+    }
+
+
+    /**************FOTOS CLUB {HTML} ***************/
+    .grupo-imagenes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grupo-imagenes h2 {
+        text-align: center;
+    }
+
+    .descripcion-fotos p {
+        font-size: 1rem;
+    }
+
+
+    /*****************footer*******************/
+    .racing-copy h5 {
+        font-size: 1rem;
+    }
+
+    .mini6 {
+        display: flex;
+    }
+
+}
+
+
+
+
+
+
+/*##################################################################*/
+@media (max-width: 400px){
+    /**********index.html**************/
+    .jugadores-contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /***********fixture.html****************/
+    .t-none,
+    .t-none,
+    .fixture-fecha tbody tr td:first-child,
+    .fixture-fecha tbody tr td:last-child,
+    .fixture-racing tbody tr td:first-child,
+    .fixture-racing tbody tr td:nth-child(6) {
+        display: none;
+    }
+
+
+    /***********posiciones.html****************/
+    .zonas thead tr th:nth-child(5),
+    .zonas thead tr th:nth-child(6),
+    .zonas thead tr th:nth-child(7),
+    .zonas thead tr th:nth-child(8),
+    .zonas thead tr th:nth-child(9),
+    .zonas tbody tr td:nth-child(5),
+    .zonas tbody tr td:nth-child(6),
+    .zonas tbody tr td:nth-child(7),
+    .zonas tbody tr td:nth-child(8),
+    .zonas tbody tr td:nth-child(9) {
+        display: none;
+    }
+
+
+    .tabla-general thead tr th:nth-child(5),
+    .tabla-general thead tr th:nth-child(6),
+    .tabla-general thead tr th:nth-child(7),
+    .tabla-general thead tr th:nth-child(8),
+    .tabla-general thead tr th:nth-child(9),
+    .tabla-general tbody tr td:nth-child(5),
+    .tabla-general tbody tr td:nth-child(6),
+    .tabla-general tbody tr td:nth-child(7),
+    .tabla-general tbody tr td:nth-child(8),
+    .tabla-general tbody tr td:nth-child(9),
+    .tabla-promedios thead tr th:nth-child(3),
+    .tabla-promedios thead tr th:nth-child(4),
+    .tabla-promedios thead tr th:nth-child(5),
+    .tabla-promedios tbody tr td:nth-child(3),
+    .tabla-promedios tbody tr td:nth-child(4),
+    .tabla-promedios tbody tr td:nth-child(5) {
+        display: none;
+    }
+
+    .llave {
+        font-size: 12px;
+    }
+
+    /*************Goles.html*******************/
+
+    .goles_fecha {
+        margin: 20px 5px;
+    }
+
+    /**************FOTOS CLUB {HTML} ***************/
+    .miniaturas {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+        grid-gap: 5px;
+    }
+
+    .institucion {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .descripcion-fotos {
+        margin: 10px 0;
+    }
+
+    .descripcion-fotos p {
+        font-size: 0.85rem;
+    }
+
+
+    /*******************FOTOS PLANTEL {HTML} ************/
+    h1.foto_part_titulo {
+        text-align: center;
+        color: #201448;
+        font-size: 1.2rem;
+    }
+        h2.color_posc {
+        color: #1b1898;
+        font-size: 1.1rem;
+    }
+
+
+    /*****************footer*************/
+    .footer-contenedor {
+        display: block;
+        text-align: left;
+    }
+}
+
+
+
+
+/*##################################################################*/
+@media (max-width: 250px){
+    /***********fixture.html****************/
+    .llave {
+        display: block;
+    }
+
+
+
+    /*************Goles.html*******************/
+    .video h2,
+    .video p {
+        font-size: 12px;
+    }
+
+}
+
+
+/*##################################################################*/
+@media (max-width: 150px){
+    /**********index.html**************/
+    .jugadores-contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    
+     /*****************footer*************/
+    .footer-contenedor {
+        padding: 50px 0;
+    }
+}
