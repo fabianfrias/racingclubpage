@@ -12,6 +12,10 @@ body {
     background-color: #86b7fa;
 }
 
+a {
+    text-decoration: none;
+}
+
 ul {
     list-style-type: none;
     text-decoration: none;
@@ -826,6 +830,10 @@ h1.foto_part_titulo {
     color: #201448;
 }
 
+.mtt {
+    margin-top: -24px;
+}
+
 /***************************************************** FOTO PLANTES {HTML} *********************************************/
 
 h2.color_posc {
@@ -1112,6 +1120,21 @@ img.dirigente {
         font-size: 1rem;
     }
 
+    .mtt {
+    margin-top: 0;
+    }
+
+    /******************FOTOS PARTIDOS {HTML}*******************/
+    .partidos_contenedor {
+        padding: 5px;
+    }
+
+    .fotos_fecha {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        padding: 5px;
+    }
+
 
     /*****************footer*******************/
     .racing-copy h5 {
@@ -1223,6 +1246,23 @@ img.dirigente {
         h2.color_posc {
         color: #1b1898;
         font-size: 1.1rem;
+    }
+
+    /******************FOTOS PARTIDOS*******************/
+    h1.foto_part_titulo {
+        font-size: 0.8rem;
+    }
+
+    .partidos_contenedor {
+        font-size: 0.8rem;
+    }
+
+    .partidos_contenedor h2 {
+        font-size: 1rem;
+    }
+
+    .fotos_fecha {
+        grid-template-columns: 1fr;
     }
 
 
