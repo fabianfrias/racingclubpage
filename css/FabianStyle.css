@@ -347,21 +347,19 @@ main h3 {
 footer {
     background-color: #051041;
     height: 100%;
-    padding: 0 20px; /* Espacio en los extremos del footer */
 }
 
 .footer-contenedor {
     width: auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    text-align: center;
-    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 0px;
 }
 
 .racing-copy {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .racing-copy h5 {
@@ -374,6 +372,7 @@ footer {
 .aboutme {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .aboutme p {
@@ -386,14 +385,18 @@ footer {
 .racing-redes {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
-.racing-redes p {
+.racing-redes a {
+    font-size: 2.5rem;
+    color: #0e63ff;
+}
+
+.racing-redes a:active {
     color: white;
-    font-family: "Raleway", sans-serif;
 }
-
-
 
 /************************************* TORENO ********************************************************/
 
