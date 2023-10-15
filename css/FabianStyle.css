@@ -67,7 +67,6 @@ main h3 {
 .banner {
   height: 150px;
 }
-
 .banner img {
   width: 100%;
   height: 100%;
@@ -88,24 +87,19 @@ main h3 {
   align-items: center;
   padding: 0 20px;
 }
-
-.escudo img {
+.izquierda .escudo img {
   height: 50px;
 }
-
 .izquierda p {
   color: white;
   font-family: "Playfair Display", sans-serif;
 }
-
-.primergrande {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
+.izquierda .primergrande {
+  font-size: 11px;
   font-style: italic;
+  font-weight: 500;
 }
-
-.contenido-palabras {
+.izquierda .contenido-palabras {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,21 +111,18 @@ main h3 {
   align-items: center;
   gap: 1rem;
   margin-right: 50px;
-  margin-bottom: 0; /* para contrarestrar bootstrap */
+  margin-bottom: 0;
 }
-
 .menu a:hover {
   background: rgb(6, 143, 213);
   background: linear-gradient(90deg, rgba(6, 143, 213, 0.737219888) 5%, rgba(53, 158, 240, 0.7400210084) 95%);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
-
-.item-home a {
+.menu .item-home a {
   color: white;
   padding: 20px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
-
 .menu .item-lista {
   height: 100%;
   background-color: #3399CC;
@@ -140,8 +131,7 @@ main h3 {
   gap: 1rem;
   object-fit: cover;
 }
-
-.item-lista a {
+.menu .item-lista a {
   text-decoration: none;
   color: white;
   display: flex;
@@ -149,8 +139,7 @@ main h3 {
   font-family: "Raleway", sans-serif;
   padding: 20px;
 }
-
-.submenu {
+.menu .item-lista .submenu {
   background-color: #1C699D;
   position: absolute;
   padding: 0;
@@ -158,17 +147,14 @@ main h3 {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   width: min-content;
 }
-
-.submenu a {
+.menu .item-lista .submenu a {
   color: white;
   display: block;
 }
-
-.submenu a:hover {
+.menu .item-lista .submenu a:hover {
   background-color: #4388ef;
 }
-
-.item-lista:hover .submenu {
+.menu .item-lista:hover .submenu {
   display: block;
 }
 

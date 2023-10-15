@@ -1,123 +1,122 @@
 /******************************* NAV BAR *******************************/
 
 .banner {
-    height: 150px;
-}
+  height: 150px;
 
-.banner img {
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
 }
-
 
 .header-menu {
-    background-color: #003366;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
+  background-color: #003366;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
 }
-
 
 .izquierda {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-}
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
 
-.escudo img {
+  .escudo img {
     height: 50px;
-}
+  }
 
-.izquierda p {
+  p {
     color: white;
     font-family: "Playfair Display", sans-serif;
-}
+  }
 
-.primergrande {
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 10px;
+  .primergrande {
+    font-size: 11px;
     font-style: italic;
-}
+    font-weight: 500;
+  }
 
-.contenido-palabras{
+  .contenido-palabras {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 5px;
+  }
 }
 
 .menu {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-right: 50px;
-    margin-bottom: 0; /* para contrarestrar bootstrap */
-}
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 50px;
+  margin-bottom: 0; // para contrarrestar bootstrap
 
-.menu a:hover{
-    background: rgb(6,143,213);
-    background: linear-gradient(90deg, rgba(6,143,213,0.7372198879551821) 5%, rgba(53,158,240,0.7400210084033614) 95%);
+  a:hover {
+    background: rgb(6, 143, 213);
+    background: linear-gradient(
+      90deg,
+      rgba(6, 143, 213, 0.7372198879551821) 5%,
+      rgba(53, 158, 240, 0.7400210084033614) 95%
+    );
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-}
+  }
 
-
-.item-home a{
+  .item-home a {
     color: white;
     padding: 20px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-}
+  }
 
-
-.menu .item-lista {
+  .item-lista {
     height: 100%;
     background-color: #3399CC;
     display: inline-block;
     height: 100%;
     gap: 1rem;
     object-fit: cover;
-}
 
-.item-lista a {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    font-family: "Raleway", sans-serif;
-    padding: 20px;
-}
+    a {
+      text-decoration: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      font-family: "Raleway", sans-serif;
+      padding: 20px;
+    }
 
+    .submenu {
+      background-color: #1C699D;
+      position: absolute;
+      padding: 0;
+      display: none;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+      width: min-content;
 
-.submenu {
-    background-color: #1C699D;
-    position: absolute;
-    padding: 0;
-    display: none;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    width: min-content;
-}
+      a {
+        color: white;
+        display: block;
 
-.submenu a {
-    color: white;
-    display: block;
-}
+        &:hover {
+          background-color: #4388ef;
+        }
+      }
+    }
 
-.submenu a:hover {
-    background-color: #4388ef;
-}
-
-.item-lista:hover .submenu {
-    display: block;
+    &:hover {
+      .submenu {
+        display: block;
+      }
+    }
+  }
 }
 
 .icon__menu {
-    display: none;
+  display: none;
 }
 
 #check__menu {
-    display: none;
+  display: none;
 }
-
