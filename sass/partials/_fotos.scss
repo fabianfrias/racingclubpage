@@ -1,0 +1,206 @@
+/******************************************** FOTOS ***********************************************************/
+
+/************************************* FOTOS SOBRE EL CLUB ****************************************************/
+p {
+    margin-bottom: 0; /* para contrarrestrar bootstrap */
+}
+
+h1.foto_club {
+    text-align: center;
+    color: #0d008a;
+}
+
+.institucion {
+    padding: 20px;
+    margin: 30px 20px;
+    border: 2px solid #f3f3f3;
+    background: rgba(0, 156, 222, 0.9);
+}
+
+.grupo-imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.grupo-imagenes h2 {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-principal {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-principal img {
+  max-width: 100%;
+}
+
+.miniaturas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.miniaturas img {
+    max-width: 100%;
+}
+
+.descripcion-fotos {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.descripcion-fotos h3 {
+    color: white;
+    font-size: 1.30rem;
+}
+
+.descripcion-fotos p {
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #f6f6f6;
+}
+
+.miniaturas2 {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.miniaturas2 img {
+    max-width: 100%;
+}
+
+
+/******************************************* FOTOS DE PARTIDOS **********************************/
+
+.partidos_contenedor {
+    display: grid;
+    padding: 10px;
+    margin: 30px 20px;
+    border: 2px solid white;
+    background: rgb(122 122 255 / 90%);
+}
+
+.partidos_contenedor p {
+    margin-top: 10px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.partidos_contenedor img {
+    max-width: 100%;
+    height: auto;
+}
+
+.partidos_contenedor h2 {
+    display: flex;
+    justify-content: center;
+    color: #00006b;
+    background-color: #f9f9ffe8;
+}
+
+.foto_resultado {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.fotos_fecha {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.descr_partidos {
+    text-align: center;
+    background-color: #f9f9ffe8;
+}
+
+.descr_partidos p {
+    font-style: normal;
+    text-decoration: none;
+}
+
+h1.foto_part_titulo {
+    text-align: center;
+    color: #201448;
+}
+
+.mtt {
+    margin-top: -24px;
+}
+
+/***************************************************** FOTO PLANTES {HTML} *********************************************/
+
+h2.color_posc {
+    color: #1b1898;
+}
+
+.row {
+    margin-bottom: 2rem;
+}
+
+.row h1 {
+    color: blue;
+}
+
+.col,
+.col-xl-3,
+.col-md-6,
+.col-sm-12 {
+    margin-bottom: 10px;
+}
+
+.col p,
+.col-xl-3 p,
+.col-md-6 p,
+.col-sm-12 p {
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    background: #0c0c64;
+}
+
+.C-T {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.C-T p {
+    background: none;
+    color: black;
+}
+
+img.dirigente {
+    width: 250px;
+    height: 250px;
+}

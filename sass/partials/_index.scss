@@ -1,0 +1,154 @@
+/*********************************** INDEX.HTML *************************************************/
+
+/****************************** HISTORIA RESUMEN ******************************************/
+
+.historia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 50px 10px;
+}
+
+.descripcion {
+    flex: 1;
+    padding: 10px;
+}
+
+.descripcion h1 {
+    color: #ffffffdb;
+}
+
+.descripcion p {
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/******************** MINI PLANTEL *********************************/
+
+.miniplantel {
+    padding: 0px 10px 30px 10px;
+}
+
+.miniplantel h2{
+    color: black;
+}
+
+.jugadores-contenedor {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    padding: 5px;
+    background: rgb(115,217,255);
+    background: linear-gradient(90deg, rgba(115,217,255,0.7540266106442577) 20%, rgba(255,255,255,0.7596288515406162) 50%, rgba(115,217,255,0.7456232492997199) 80%);
+    text-align: center;
+    justify-content: space-between;
+    border: 3px solid #2270e9;;
+    gap: 2rem;
+}
+
+.jugador {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.jugador img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/****************************************** Titulos Ganados **************************************/
+
+.titulosG {
+    border: 1px solid rgb(183, 170, 255, 0.5);
+    margin: 20px 10px 20px 10px;
+    background: linear-gradient(90deg, rgb(183 170 255 / 50%) 20%, rgb(255 255 255 / 80%) 50%, rgb(183 170 255 / 50%) 80%);
+}
+
+
+.titulosG h2 {
+    font-size: 2rem;
+}
+
+
+.trofeos-contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trofeos-cuadraditos {
+    width: 250px;
+    height: 250px;
+    border: 2px solid blue;
+    margin-bottom: 30px
+}
+
+.trofeos-cuadraditos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trofeos-cuadraditos p {
+    font-weight: bold;
+}
+
+.totales-contenedor {
+    border: 2px solid blue;
+    margin-top: 50px;
+}
+
+
+.titulosG h3 {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+.trofeos-listas {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.trofeos-listas li {
+    margin-bottom: 10px;
+    list-style-type: "🏆";
+}
+
+.trofeos-listas h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.25rem;
+    margin-right: 5px;
+}
+
+
+.trofeos-listas p {
+    color: #411d71;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    margin: 0;
+}
+
+.up-index {
+    visibility: hidden;
+}
