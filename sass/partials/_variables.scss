@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,800;0,900;1,100;1,200;1,800;1,900&family=Nunito:ital,wght@0,200;1,200&family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=Raleway:ital,wght@0,100;0,400;0,800;0,900;1,100;1,400;1,800;1,900&display=swap');
+$AzulClaro: #B3E0F2;
+$Azul: #66B3E0;
+$AzulMedio: #3399CC;
+$AzulOscuro: #1C699D;
+$AzulMarino: #003366;
+$AzulBrillante: #2270e9;
+$AzulCielo: #4388ef;
+$AzulPastel: #659ff4;
+$AzulSuave: #86b7fa;
+$AzulPalido: #a7ceff;
+$AzulClaro: #d3e6ff;
 
 * {
     margin: 0;
@@ -46,22 +57,25 @@ header {
 
 /*********************************** MAIN *************************************************/
 
-main h1 {
+main {
+    h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     font-style: italic;
     font-size: 2rem;
-}
+    text-align: center;
+    color: #0d008a;
+    }
 
-main h2 {
-    font-family: 'Raleway', sans-serif;
+    h2 {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 2rem;
-}
+    text-align: center;
+    color: #2e00ca;
+    }
 
-main h3 {
+    h3 {
     font-family: "Montserrat", sans-serif;
+    }
 }
-
-/*********************************** Paleta de colores COLORES *************************************************/
-
