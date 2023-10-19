@@ -141,7 +141,7 @@
         transition: transform 0.3s ease;
     }
 
-    .submenu {
+    .menu .item-lista .submenu {
         position: relative;
         margin-top: 12px;
     }
@@ -150,12 +150,12 @@
         margin: 0.5rem;
     }
 
-    .item-home {
+    .menu .item-home {
         display: flex;
         justify-content: center;
     }
 
-    .item-home a {
+    .menu .item-home a {
         padding: 15px 35px;
         background-color: #003366;
         margin-top: 10px;

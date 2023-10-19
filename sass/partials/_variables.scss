@@ -10,6 +10,9 @@ $AzulPastel: #659ff4;
 $AzulSuave: #86b7fa;
 $AzulPalido: #a7ceff;
 $AzulClaro: #d3e6ff;
+$clasificados1: #0079ff;
+$clasificados2: #98e19f;
+$descenso: #98e19f;
 
 * {
     margin: 0;
@@ -77,5 +80,21 @@ main {
 
     h3 {
     font-family: "Montserrat", sans-serif;
+    }
+}
+
+
+.flechaup {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 50px;
+
+    a {
+        padding: 2px 0px;
+        font-size: 25px;
+        color: rgba(4, 0, 255, 0.75);
     }
 }

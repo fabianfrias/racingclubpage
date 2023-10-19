@@ -3,16 +3,12 @@
 /********************************************* FIXTURE {HTML} *****************************************/
 
 .fixture-titulo {
-    display: block;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-    color: #120588;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 900;
-    font-size: 2rem;
+    h1 {
+        display: block;
+        justify-content: center;
+        padding: 20px;
+    }
 }
-
 
 .fixture-contenedor {
     display: flex;
@@ -21,27 +17,35 @@
     padding: 20px 10px 50px 10px;
 }
 
-
-.head-principal th {
-    background-color: #003366;
-    color: white;
+.head-principal {
+    th {
+        background-color: #003366;
+        color: white;
+    }
 }
 
-.head-secundario th {
-    background-color: #2270e9;
-    color: white;
+.head-secundario {
+    th {
+        background-color: #2270e9;
+        color: white;
+    }
 }
 
-.t-body{
+.t-body {
     background-color: #d3e6ff;
 }
 
-.fixture-fecha tbody tr td:nth-child(2) {
-    text-align: left;
-}
-
-.fixture-fecha tbody tr td:nth-child(5n) {
-    text-align: right;
+.fixture-fecha {
+    tbody {
+        tr {
+            td:nth-child(2) {
+                text-align: left;
+            }
+            td:nth-child(5n) {
+                text-align: right;
+            }
+        }
+    }
 }
 
 .fixture-tbody-r {
@@ -53,8 +57,7 @@
     text-align: center;
 }
 
-
-.racing-dif{
+.racing-dif {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -69,30 +72,21 @@
 }
 
 .titulollave {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+    h2 {
+        font-size: 1.5rem;
+    }
 }
-
-.titulollave h2 {
-    color: #120588;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 900;
-    font-size: 2rem;
-}
-
 
 .llave {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.llave h3 {
-    color: #1C699D;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
+    h3 {
+        color: #1C699D;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
 
 .ronda {
@@ -100,12 +94,11 @@
     border-collapse: collapse;
     margin-bottom: 30px;
     background-color: #7dbbff;
-}
-
-.ronda td{
-    border: 1px solid #000;
-    padding: 5px;
-    text-align: center;
+    td {
+        border: 1px solid #000;
+        padding: 5px;
+        text-align: center;
+    }
 }
 
 
@@ -113,62 +106,51 @@
 
 /***************************************POSICIONES HTML *********************************************/
 
-h1.titulo-posiciones{
-    padding: 20px;
-    text-align: center;
-    color: #120588;
-    font-family: "Raleway", sans-serif;
-    font-weight: 900;
+h1.titulo-posiciones {
+        padding: 20px;
 }
 
 h2.LPFArgentina {
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    color: #2e00ca;
-    padding: 20px 0px 0px 0px;
+        font-size: 1.5rem;
+        padding: 20px 0px 0px 0px;
 }
-
 
 .zonas {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 5px 10px 50px 10px;
-}
 
-.zonaA h3, .zonaB h3 {
-    text-align: center;
-    color: #120588;
-    font-family: "Nunito", sans-serif;
-    font-weight: 900;
-    font-size: 2rem;
-}
+    h3 {
+        text-align: center;
+        color: #120588;
+        font-family: "Nunito", sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+    }
 
-.zonas table tbody tr td:nth-child(2),
-.posicionesAnual table tbody tr td:nth-child(2) {
-    text-align: left;
+    table tbody tr {
+        td:nth-child(2) {
+            text-align: left;
+        }
+    }
 }
 
 .clasificados1 {
-    background-color: #0079ff;
+    background-color: $clasificados1;
     list-style-type: "🏆";
     margin-left: 20px;
 }
 
-
 .titulos-posiciones {
     display: flex;
     justify-content: center;
-}
 
-.titulos-posiciones h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    color: #2e00ca;
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #2e00ca;
+    }
 }
 
 .posicionesAnual {
@@ -177,54 +159,45 @@ h2.LPFArgentina {
     flex-flow: column;
     align-items: center;
     padding: 50px 0;
+
+    .tabla-general,
+    .tabla-promedios {
+        width: 50%;
+    }
+
+    .condiciones {
+        width: 50%;
+    }
+
+    .clasificados2 {
+        background-color: $clasificados2;
+        list-style-type: "🏆";
+        margin-left: 20px;
+    }
+
+    .cmp1 {
+        background-color: #12931e;
+        list-style-type: "🥇";
+        margin-left: 20px;
+    }
+
+    .descenso {
+        background-color: $descenso;
+        list-style-type: "🔻";
+        margin-left: 20px;
+        color: white;
+    }
 }
 
-.tabla-general,
-.tabla-promedios {
-    width: 50%;
-}
 
-.condiciones {
-    width: 50%;
-}
 
-.clasificados2{
-    background-color: #98e19f;
-    list-style-type: "🏆";
-    margin-left: 20px;
-}
-
-.cmp1 {
-    background-color: #12931e;
-    list-style-type: "🥇";
-    margin-left: 20px;
-}
-
-.descenso {
-    background-color: #b20000;
-    list-style-type: "🔻";
-    margin-left: 20px;
-    color: white;
-}
-
-.flechaup {
-    position: fixed;
-    bottom: 30px;
-    right: 10px;
-    z-index: 999;
-    background-color: rgb(255 255 255 / 75%);
-    border-radius: 50px;
-}
-
-.flechaup a {
-    padding: 2px 0px;
-    font-size: 25px;
-    color: rgb(4 0 255 / 75%);
-}
 
 /************************************** COPA ARGENTINA {HTML}***************************************/
-.copaargentina img{
-    margin-bottom: -4px;
-    width: 100%;
-    height: 100%;
+
+.copaargentina {
+    img {
+        margin-bottom: -4px;
+        width: 100%;
+        height: 100%;
+    }
 }
