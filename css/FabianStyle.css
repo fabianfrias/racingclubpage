@@ -44,6 +44,10 @@ header {
   flex-direction: column;
 }
 
+p {
+  margin-bottom: 0; /* para contrarrestrar bootstrap */
+}
+
 /*********************************** MAIN *************************************************/
 main h1 {
   font-family: "Raleway", sans-serif;
@@ -62,6 +66,11 @@ main h2 {
 }
 main h3 {
   font-family: "Montserrat", sans-serif;
+}
+
+footer {
+  background-color: #051041;
+  height: 100%;
 }
 
 .flechaup {
@@ -182,56 +191,45 @@ main h3 {
 }
 
 /************************************ FOOTER ********************************************/
-footer {
-  background-color: #051041;
-  height: 100%;
-}
-
 .footer-contenedor {
   width: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 50px 0px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 0;
 }
-
-.racing-copy {
+.footer-contenedor .racing-copy {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.racing-copy h5 {
+.footer-contenedor .racing-copy h5 {
   color: #8c86c5;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
+  font-weight: bold;
   margin: 0;
 }
-
-.aboutme {
+.footer-contenedor .aboutme {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.aboutme p {
+.footer-contenedor .aboutme p {
   color: white;
   font-family: "Raleway", sans-serif;
   margin: 0;
 }
-
-.racing-redes {
+.footer-contenedor .racing-redes {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
 }
-
-.racing-redes a {
+.footer-contenedor .racing-redes a {
   font-size: 2.5rem;
   color: #0e63ff;
 }
-
-.racing-redes a:active {
+.footer-contenedor .racing-redes a:active {
   color: white;
 }
 
@@ -511,7 +509,7 @@ h2.LPFArgentina {
   margin-left: 20px;
 }
 .posicionesAnual .descenso {
-  background-color: #98e19f;
+  background-color: #b20000;
   list-style-type: "🔻";
   margin-left: 20px;
   color: white;
@@ -534,16 +532,15 @@ h2.LPFArgentina {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-evenly;
-  background-color: rgba(255, 255, 255, 0.7882352941);
+  background-color: rgba(255, 255, 255, 0.79);
 }
-
-.goles_fecha h1 {
+.goles_fecha h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   text-align: center;
   font-size: 2rem;
-  color: rgba(255, 255, 255, 0.9215686275);
-  background-color: rgba(101, 41, 255, 0.831372549);
+  color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(101, 41, 255, 0.83);
   width: 100%;
 }
 
@@ -555,15 +552,13 @@ h2.LPFArgentina {
   width: auto;
   box-sizing: border-box;
 }
-
-.video h2 {
+.video h3 {
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 1.2rem;
   color: #3100d7;
   margin: 0;
 }
-
 .video p {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -573,15 +568,6 @@ h2.LPFArgentina {
 
 /******************************************** FOTOS ***********************************************************/
 /************************************* FOTOS SOBRE EL CLUB ****************************************************/
-p {
-  margin-bottom: 0; /* para contrarrestrar bootstrap */
-}
-
-h1.foto_club {
-  text-align: center;
-  color: #0d008a;
-}
-
 .institucion {
   padding: 20px;
   margin: 30px 20px;
@@ -591,9 +577,9 @@ h1.foto_club {
 
 .grupo-imagenes {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
 }
-
 .grupo-imagenes h2 {
   display: flex;
   color: white;
@@ -605,18 +591,16 @@ h1.foto_club {
   display: flex;
   justify-content: center;
 }
-
 .imagen-principal img {
   max-width: 100%;
 }
 
 .miniaturas {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   align-items: center;
 }
-
 .miniaturas img {
   max-width: 100%;
 }
@@ -627,12 +611,10 @@ h1.foto_club {
   align-items: center;
   margin: 10px;
 }
-
 .descripcion-fotos h3 {
   color: white;
   font-size: 1.3rem;
 }
-
 .descripcion-fotos p {
   text-align: justify;
   font-family: "Nunito", sans-serif;
@@ -646,7 +628,6 @@ h1.foto_club {
   grid-gap: 10px;
   align-items: center;
 }
-
 .miniaturas2 img {
   max-width: 100%;
 }
@@ -657,20 +638,17 @@ h1.foto_club {
   padding: 10px;
   margin: 30px 20px;
   border: 2px solid white;
-  background: rgba(122, 122, 255, 0.9);
+  background: #4388ef;
 }
-
 .partidos_contenedor p {
   margin-top: 10px;
   font-style: italic;
   text-decoration: underline;
 }
-
 .partidos_contenedor img {
   max-width: 100%;
   height: auto;
 }
-
 .partidos_contenedor h2 {
   display: flex;
   justify-content: center;
@@ -688,19 +666,17 @@ h1.foto_club {
 
 .fotos_fecha {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   padding: 10px;
   align-items: center;
   justify-content: center;
 }
-
-.foto {
+.fotos_fecha .foto {
   text-align: center;
   margin-bottom: 10px;
 }
-
-.foto img {
+.fotos_fecha .foto img {
   max-width: 100%;
   height: auto;
 }
@@ -709,19 +685,13 @@ h1.foto_club {
   text-align: center;
   background-color: rgba(249, 249, 255, 0.9098039216);
 }
-
 .descr_partidos p {
   font-style: normal;
   text-decoration: none;
 }
 
-h1.foto_part_titulo {
-  text-align: center;
-  color: #201448;
-}
-
 .mtt {
-  margin-top: -24px;
+  margin-top: -24px; /*contrarrestar bootstrap */
 }
 
 /***************************************************** FOTO PLANTES {HTML} *********************************************/
@@ -732,22 +702,19 @@ h2.color_posc {
 .row {
   margin-bottom: 2rem;
 }
-
 .row h1 {
   color: blue;
 }
-
-.col,
-.col-xl-3,
-.col-md-6,
-.col-sm-12 {
+.row .col,
+.row .col-xl-3,
+.row .col-md-6,
+.row .col-sm-12 {
   margin-bottom: 10px;
 }
-
-.col p,
-.col-xl-3 p,
-.col-md-6 p,
-.col-sm-12 p {
+.row .col p,
+.row .col-xl-3 p,
+.row .col-md-6 p,
+.row .col-sm-12 p {
   font-style: italic;
   font-weight: bold;
   position: absolute;
@@ -762,10 +729,9 @@ h2.color_posc {
   justify-content: center;
   margin: 10px 0;
 }
-
 .C-T p {
-  background: none;
-  color: black;
+  background: none !important;
+  color: black !important;
 }
 
 img.dirigente {
@@ -873,12 +839,12 @@ img.dirigente {
     justify-content: center;
     transition: transform 0.3s ease;
   }
+  .menu .item-lista {
+    margin: 0.5rem;
+  }
   .menu .item-lista .submenu {
     position: relative;
     margin-top: 12px;
-  }
-  .menu .item-lista {
-    margin: 0.5rem;
   }
   .menu .item-home {
     display: flex;
@@ -899,9 +865,15 @@ img.dirigente {
   .historia {
     display: block;
   }
-  .jugadores-contenedor {
+  .miniplantel .jugadores-contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .miniplantel .mini6,
+  .miniplantel .mini7,
+  .miniplantel .mini8,
+  .miniplantel .mini9 {
+    display: flex;
   }
   .trofeos-contenedor {
     display: flex;
@@ -956,16 +928,16 @@ img.dirigente {
   .racing-copy h5 {
     font-size: 1rem;
   }
-  .mini6 {
-    display: flex;
-  }
 }
 /*##################################################################*/
 @media (max-width: 400px) {
   /**********index.html**************/
-  .jugadores-contenedor {
+  .miniplantel .jugadores-contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .miniplantel .mini10 {
+    display: flex;
   }
   /***********fixture.html****************/
   .t-none,
@@ -1032,7 +1004,7 @@ img.dirigente {
     font-size: 0.85rem;
   }
   /*******************FOTOS PLANTEL {HTML} ************/
-  h1.foto_part_titulo {
+  h1.foto_plant_titulo {
     text-align: center;
     color: #201448;
     font-size: 1.2rem;
@@ -1047,6 +1019,7 @@ img.dirigente {
   }
   .partidos_contenedor {
     font-size: 0.8rem;
+    margin: auto;
   }
   .partidos_contenedor h2 {
     font-size: 1rem;
@@ -1058,6 +1031,9 @@ img.dirigente {
   .footer-contenedor {
     display: block;
     text-align: left;
+  }
+  .footer-contenedor .racing-copy h5 {
+    font-size: 1rem;
   }
 }
 /*##################################################################*/
@@ -1071,6 +1047,13 @@ img.dirigente {
   .video p {
     font-size: 12px;
   }
+  /***************footer***********************/
+  .footer-contenedor {
+    padding: 50px 0;
+  }
+  .footer-contenedor .racing-redes a {
+    font-size: 1.5rem;
+  }
 }
 /*##################################################################*/
 @media (max-width: 150px) {
@@ -1080,8 +1063,8 @@ img.dirigente {
     grid-template-columns: 1fr;
   }
   /*****************footer*************/
-  .footer-contenedor {
-    padding: 50px 0;
+  .footer-contenedor .racing-redes a {
+    font-size: 1.5rem;
   }
 }
 

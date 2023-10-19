@@ -10,17 +10,17 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-evenly;
-    background-color: #ffffffc9;
-}
+    background-color: rgba(255, 255, 255, 0.79);
 
-.goles_fecha h1 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    text-align: center;
-    font-size: 2rem;
-    color: #ffffffeb;
-    background-color: #6529ffd4;
-    width: 100%;
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        text-align: center;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.92);
+        background-color: rgba(101, 41, 255, 0.83);
+        width: 100%;
+    }
 }
 
 .video {
@@ -30,19 +30,19 @@
     border-radius: 5px;
     width: auto;
     box-sizing: border-box;
-}
 
-.video h2 {
-    font-family: "Montserrat";
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #3100d7;
-    margin: 0;
-}
+    h3 {
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #3100d7;
+        margin: 0;
+    }
 
-.video p {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-    color: #02003d;
+    p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        color: #02003d;
+    }
 }

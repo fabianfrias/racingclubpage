@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,800;0,900;1,100;1,200;1,800;1,900&family=Nunito:ital,wght@0,200;1,200&family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=Raleway:ital,wght@0,100;0,400;0,800;0,900;1,100;1,400;1,800;1,900&display=swap');
 $AzulClaro: #B3E0F2;
 $Azul: #66B3E0;
-$AzulMedio: #3399CC;
-$AzulOscuro: #1C699D;
+$CelesteMedio: #3399CC;
+$CelesteOscuro: #1C699D;
 $AzulMarino: #003366;
 $AzulBrillante: #2270e9;
 $AzulCielo: #4388ef;
@@ -12,7 +12,7 @@ $AzulPalido: #a7ceff;
 $AzulClaro: #d3e6ff;
 $clasificados1: #0079ff;
 $clasificados2: #98e19f;
-$descenso: #98e19f;
+$descenso: #b20000;
 
 * {
     margin: 0;
@@ -22,7 +22,7 @@ $descenso: #98e19f;
 }
 
 body {
-    background-color: #86b7fa;
+    background-color: $AzulSuave;
 }
 
 a {
@@ -58,6 +58,10 @@ header {
     flex-direction: column;
 }
 
+p {
+    margin-bottom: 0; /* para contrarrestrar bootstrap */
+}
+
 /*********************************** MAIN *************************************************/
 
 main {
@@ -83,6 +87,10 @@ main {
     }
 }
 
+footer {
+    background-color: #051041;
+    height: 100%;
+}
 
 .flechaup {
     position: fixed;
