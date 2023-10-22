@@ -148,7 +148,6 @@ footer {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .menu .item-lista {
-  height: 100%;
   background-color: #3399CC;
   display: inline-block;
   height: 100%;
@@ -566,6 +565,28 @@ h2.LPFArgentina {
   color: #02003d;
 }
 
+.tarjeta {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #3399CC;
+  grid-gap: 0.5rem;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 100px;
+}
+.tarjeta p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.tarjeta a {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  color: #003366;
+  background-color: #a7ceff;
+  padding: 10px;
+}
+
 /******************************************** FOTOS ***********************************************************/
 /************************************* FOTOS SOBRE EL CLUB ****************************************************/
 .institucion {
@@ -901,6 +922,9 @@ img.dirigente {
   .goles_fecha {
     margin: 20px 30px;
   }
+  .tarjeta {
+    margin: 20px 30px;
+  }
   /**************FOTOS CLUB {HTML} ***************/
   .grupo-imagenes {
     display: grid;
@@ -986,6 +1010,10 @@ img.dirigente {
   .goles_fecha {
     margin: 20px 5px;
   }
+  .tarjeta {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px 5px;
+  }
   /**************FOTOS CLUB {HTML} ***************/
   .miniaturas {
     display: grid;
@@ -1046,6 +1074,10 @@ img.dirigente {
   .video h2,
   .video p {
     font-size: 12px;
+  }
+  .tarjeta {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 5px;
   }
   /***************footer***********************/
   .footer-contenedor {

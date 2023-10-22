@@ -46,3 +46,27 @@
         color: #02003d;
     }
 }
+
+.tarjeta {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: $CelesteMedio;
+    grid-gap: 0.5rem;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 100px;
+
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+    }
+
+    a {
+        font-family: 'Playfair Display';
+        font-weight: 500;
+        color: $AzulMarino;
+        background-color: $AzulPalido;
+        padding: 10px;
+    }
+}

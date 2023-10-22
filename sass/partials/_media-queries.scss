@@ -225,6 +225,10 @@
         margin: 20px 30px;
     }
 
+    .tarjeta {
+        margin: 20px 30px;
+    }
+
 
     /**************FOTOS CLUB {HTML} ***************/
     .grupo-imagenes {
@@ -334,6 +338,11 @@
         margin: 20px 5px;
     }
 
+    .tarjeta {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 20px 5px;
+    }
+
     /**************FOTOS CLUB {HTML} ***************/
     .miniaturas {
         display: grid;
@@ -412,6 +421,12 @@
     .video p {
         font-size: 12px;
     }
+
+    .tarjeta {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px 5px;
+    }
+
 
     /***************footer***********************/
         .footer-contenedor {
