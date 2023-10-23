@@ -73,12 +73,12 @@
 }
 
 
-/******************************************* FOTOS DE PARTIDOS **********************************/
+//******************************************* FOTOS DE PARTIDOS **********************************//
 
 .partidos_contenedor {
     display: grid;
     padding: 10px;
-    margin: 30px 20px;
+    margin: 30px 0px;
     border: 2px solid white;
     background: $AzulCielo;
 
@@ -139,11 +139,34 @@
 }
 
 .mtt {
-    margin-top: -24px; /*contrarrestar bootstrap */
+    margin-top: -24px; //*contrarrestar bootstrap *//
+}
+
+.tarjetitas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: $CelesteMedio;
+    grid-gap: 0.5rem;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+    }
+
+    a {
+        font-family: 'Playfair Display';
+        font-weight: 500;
+        color: $AzulMarino;
+        background-color: $AzulPalido;
+        padding: 10px;
+    }
 }
 
 
-/***************************************************** FOTO PLANTES {HTML} *********************************************/
+//***************************************************** FOTO PLANTES {HTML} *********************************************//
 
 h2.color_posc {
     color: #1b1898;

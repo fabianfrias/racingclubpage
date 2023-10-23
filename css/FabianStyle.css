@@ -654,11 +654,10 @@ h2.LPFArgentina {
   max-width: 100%;
 }
 
-/******************************************* FOTOS DE PARTIDOS **********************************/
 .partidos_contenedor {
   display: grid;
   padding: 10px;
-  margin: 30px 20px;
+  margin: 30px 0px;
   border: 2px solid white;
   background: #4388ef;
 }
@@ -713,10 +712,30 @@ h2.LPFArgentina {
 }
 
 .mtt {
-  margin-top: -24px; /*contrarrestar bootstrap */
+  margin-top: -24px;
 }
 
-/***************************************************** FOTO PLANTES {HTML} *********************************************/
+.tarjetitas {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #3399CC;
+  grid-gap: 0.5rem;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+.tarjetitas p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.tarjetitas a {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  color: #003366;
+  background-color: #a7ceff;
+  padding: 10px;
+}
+
 h2.color_posc {
   color: #1b1898;
 }
@@ -761,8 +780,6 @@ img.dirigente {
   height: 250px;
 }
 
-/************************************************** RESPONSIVE **************************************************/
-/****************************************************************************************************************/
 @media (max-width: 1300px) {
   .mini11 {
     display: none;
@@ -771,7 +788,6 @@ img.dirigente {
     gap: 1.5rem;
   }
 }
-/*##################################################################*/
 @media (max-width: 1200px) {
   .mini11,
   .mini10,
@@ -782,7 +798,6 @@ img.dirigente {
     gap: 1.5rem;
   }
 }
-/*##################################################################*/
 @media (max-width: 1000px) {
   .mini8 {
     display: none;
@@ -791,16 +806,12 @@ img.dirigente {
     gap: 1.5rem;
   }
 }
-/*##################################################################*/
 @media (max-width: 900px) {
-  /***********fixture.html****************/
   .zonas {
     display: block;
   }
 }
-/*##################################################################*/
 @media (max-width: 850px) {
-  /*********index.html***********/
   .mini7 {
     display: none;
   }
@@ -812,9 +823,7 @@ img.dirigente {
     margin-bottom: 50px;
   }
 }
-/*##################################################################*/
 @media (max-width: 750px) {
-  /***************index.html********************/
   .mini6 {
     display: none;
   }
@@ -822,7 +831,6 @@ img.dirigente {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  /*****************fixture.html************************************/
   .fixture-contenedor {
     display: block;
   }
@@ -830,9 +838,7 @@ img.dirigente {
     margin-bottom: 15px;
   }
 }
-/*##################################################################*/
 @media (max-width: 600px) {
-  /*******************NAV BAR********************/
   .izquierda {
     padding: 0 5px;
   }
@@ -883,7 +889,6 @@ img.dirigente {
   #check__menu:checked ~ .icon__menu-label .icon__menu {
     transform: rotate(90deg);
   }
-  /**************index.html****************/
   .historia {
     display: block;
   }
@@ -924,7 +929,6 @@ img.dirigente {
   .posicionesAnual {
     font-size: 12px;
   }
-  /*************Goles.html*******************/
   .goles_fecha {
     margin: 20px 30px;
   }
@@ -932,7 +936,6 @@ img.dirigente {
     margin: 20px 30px;
     font-size: 0.8rem;
   }
-  /**************FOTOS CLUB {HTML} ***************/
   .grupo-imagenes {
     display: grid;
     grid-template-columns: 1fr;
@@ -946,7 +949,6 @@ img.dirigente {
   .mtt {
     margin-top: 0;
   }
-  /******************FOTOS PARTIDOS {HTML}*******************/
   .partidos_contenedor {
     padding: 5px;
   }
@@ -955,14 +957,11 @@ img.dirigente {
     grid-gap: 5px;
     padding: 5px;
   }
-  /*****************footer*******************/
   .racing-copy h5 {
     font-size: 1rem;
   }
 }
-/*##################################################################*/
 @media (max-width: 400px) {
-  /**********index.html**************/
   .miniplantel .jugadores-contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -970,7 +969,6 @@ img.dirigente {
   .miniplantel .mini10 {
     display: flex;
   }
-  /***********fixture.html****************/
   .t-none,
   .t-none,
   .fixture-fecha tbody tr td:first-child,
@@ -979,7 +977,6 @@ img.dirigente {
   .fixture-racing tbody tr td:nth-child(6) {
     display: none;
   }
-  /***********posiciones.html****************/
   .zonas thead tr th:nth-child(5),
   .zonas thead tr th:nth-child(6),
   .zonas thead tr th:nth-child(7),
@@ -1013,7 +1010,6 @@ img.dirigente {
   .llave {
     font-size: 12px;
   }
-  /*************Goles.html*******************/
   .goles_fecha {
     margin: 20px 5px;
   }
@@ -1021,7 +1017,6 @@ img.dirigente {
     grid-template-columns: repeat(4, 1fr);
     margin: 20px 5px;
   }
-  /**************FOTOS CLUB {HTML} ***************/
   .miniaturas {
     display: grid;
     grid-template-columns: 1fr;
@@ -1038,7 +1033,6 @@ img.dirigente {
   .descripcion-fotos p {
     font-size: 0.85rem;
   }
-  /*******************FOTOS PLANTEL {HTML} ************/
   h1.foto_plant_titulo {
     text-align: center;
     color: #201448;
@@ -1048,7 +1042,6 @@ img.dirigente {
     color: #1b1898;
     font-size: 1.1rem;
   }
-  /******************FOTOS PARTIDOS*******************/
   h1.foto_part_titulo {
     font-size: 0.8rem;
   }
@@ -1062,7 +1055,6 @@ img.dirigente {
   .fotos_fecha {
     grid-template-columns: 1fr;
   }
-  /*****************footer*************/
   .footer-contenedor {
     display: block;
     text-align: left;
@@ -1071,22 +1063,21 @@ img.dirigente {
     font-size: 1rem;
   }
 }
-/*##################################################################*/
 @media (max-width: 250px) {
-  /***********fixture.html****************/
   .llave {
     display: block;
   }
-  /*************Goles.html*******************/
   .video h2,
   .video p {
     font-size: 12px;
   }
   .tarjeta {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin: 20px 5px;
   }
-  /***************footer***********************/
+  .tarjetitas {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .footer-contenedor {
     padding: 50px 0;
   }
@@ -1094,16 +1085,13 @@ img.dirigente {
     font-size: 1.5rem;
   }
 }
-/*##################################################################*/
 @media (max-width: 150px) {
-  /**********index.html**************/
   .jugadores-contenedor {
     display: grid;
     grid-template-columns: 1fr;
   }
-  /*****************footer*************/
   .footer-contenedor .racing-redes a {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
