@@ -190,19 +190,30 @@
         }
     }
 
-    .trofeos-contenedor {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-    }
+    .titulosG{
+        .trofeos-contenedor {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            width: auto;
 
+            .trofeos-cuadraditos {
+                margin-bottom: 40px;
+            }
+        }
+    }
     .up-index {
         visibility: visible;
     }
 
-    /***********posiciones.html****************/
+    //***************fixture.html******************//
+    .fixture-contenedor {
+        font-size: 0.77rem;
+    }
+
+
+    //***********posiciones.html****************//
     .tabla-general,
     .tabla-promedios {
         width: auto;
@@ -227,6 +238,7 @@
 
     .tarjeta {
         margin: 20px 30px;
+        font-size: 0.8rem;
     }
 
 

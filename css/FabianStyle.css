@@ -169,6 +169,7 @@ footer {
   display: none;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   width: min-content;
+  z-index: 1;
 }
 .menu .item-lista .submenu a {
   color: white;
@@ -896,17 +897,22 @@ img.dirigente {
   .miniplantel .mini9 {
     display: flex;
   }
-  .trofeos-contenedor {
+  .titulosG .trofeos-contenedor {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     width: auto;
   }
+  .titulosG .trofeos-contenedor .trofeos-cuadraditos {
+    margin-bottom: 40px;
+  }
   .up-index {
     visibility: visible;
   }
-  /***********posiciones.html****************/
+  .fixture-contenedor {
+    font-size: 0.77rem;
+  }
   .tabla-general,
   .tabla-promedios {
     width: auto;
@@ -924,6 +930,7 @@ img.dirigente {
   }
   .tarjeta {
     margin: 20px 30px;
+    font-size: 0.8rem;
   }
   /**************FOTOS CLUB {HTML} ***************/
   .grupo-imagenes {
