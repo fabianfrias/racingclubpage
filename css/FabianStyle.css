@@ -45,10 +45,9 @@ header {
 }
 
 p {
-  margin-bottom: 0; /* para contrarrestrar bootstrap */
+  margin-bottom: 0;
 }
 
-/*********************************** MAIN *************************************************/
 main h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
@@ -87,7 +86,6 @@ footer {
   color: rgba(4, 0, 255, 0.75);
 }
 
-/******************************* NAV BAR *******************************/
 .banner {
   height: 150px;
 }
@@ -190,7 +188,6 @@ footer {
   display: none;
 }
 
-/************************************ FOOTER ********************************************/
 .footer-contenedor {
   width: auto;
   display: grid;
@@ -220,10 +217,11 @@ footer {
   margin: 0;
 }
 .footer-contenedor .racing-redes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+  text-align: center;
+}
+.footer-contenedor .racing-redes p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
 .footer-contenedor .racing-redes a {
   font-size: 2.5rem;
@@ -233,8 +231,6 @@ footer {
   color: white;
 }
 
-/*********************************** INDEX.HTML *************************************************/
-/****************************** HISTORIA RESUMEN ******************************************/
 .historia {
   display: flex;
   justify-content: space-between;
@@ -265,7 +261,6 @@ footer {
   object-fit: cover;
 }
 
-/******************** MINI PLANTEL *********************************/
 .miniplantel {
   padding: 0px 10px 30px 10px;
 }
@@ -291,7 +286,6 @@ footer {
   object-fit: cover;
 }
 
-/****************************************** Titulos Ganados **************************************/
 .titulosG {
   border: 1px solid rgba(183, 170, 255, 0.5);
   margin: 20px 10px 20px 10px;
@@ -354,8 +348,6 @@ footer {
   visibility: hidden;
 }
 
-/************************************* TORENO ********************************************************/
-/********************************************* FIXTURE {HTML} *****************************************/
 .fixture-titulo h1 {
   display: block;
   justify-content: center;
@@ -441,7 +433,6 @@ footer {
   text-align: center;
 }
 
-/***************************************POSICIONES HTML *********************************************/
 h1.titulo-posiciones {
   padding: 20px;
 }
@@ -515,15 +506,12 @@ h2.LPFArgentina {
   color: white;
 }
 
-/************************************** COPA ARGENTINA {HTML}***************************************/
 .copaargentina img {
   margin-bottom: -4px;
   width: 100%;
   height: 100%;
 }
 
-/*********************************************** GOLES **************************************************/
-/********************************************** GOLES {HTML} ********************************************/
 .goles_fecha {
   margin: 20px 100px;
   border: 2px solid white;
@@ -588,8 +576,6 @@ h2.LPFArgentina {
   padding: 10px;
 }
 
-/******************************************** FOTOS ***********************************************************/
-/************************************* FOTOS SOBRE EL CLUB ****************************************************/
 .institucion {
   padding: 20px;
   margin: 30px 20px;
@@ -957,7 +943,7 @@ img.dirigente {
     grid-gap: 5px;
     padding: 5px;
   }
-  .racing-copy h5 {
+  .footer-contenedor .racing-copy h5 {
     font-size: 1rem;
   }
 }

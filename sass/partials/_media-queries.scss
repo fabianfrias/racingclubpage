@@ -273,8 +273,12 @@
 
 
     //*****************footer*******************//
-    .racing-copy h5 {
-        font-size: 1rem;
+    .footer-contenedor {
+        .racing-copy {
+            h5 {
+                font-size: 1rem;
+            }
+        }
     }
 
 }
