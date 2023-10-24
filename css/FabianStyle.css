@@ -180,6 +180,10 @@ footer {
   display: block;
 }
 
+label.icon__menu-label {
+  display: none;
+}
+
 .icon__menu {
   display: none;
 }
@@ -844,6 +848,9 @@ img.dirigente {
     flex-flow: column;
     margin-right: 70px;
     align-items: center;
+  }
+  label.icon__menu-label {
+    display: flex;
   }
   .icon__menu {
     display: flex;

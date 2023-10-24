@@ -131,6 +131,10 @@
         align-items: center;
     }
 
+    label.icon__menu-label {
+        display: flex;
+    }
+
     .icon__menu {
         display: flex;
         font-size: 30px;
