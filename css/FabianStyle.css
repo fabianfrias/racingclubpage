@@ -437,6 +437,15 @@ label.icon__menu-label {
   text-align: center;
 }
 
+.carousel {
+  padding: 100px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #4388ef;
+}
+
 h1.titulo-posiciones {
   padding: 20px;
 }
@@ -790,6 +799,9 @@ img.dirigente {
   }
   .jugadores-contenedor {
     gap: 1.5rem;
+  }
+  .carousel {
+    padding: 0;
   }
 }
 @media (max-width: 900px) {
