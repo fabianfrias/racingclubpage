@@ -701,10 +701,6 @@ h2.LPFArgentina {
   text-decoration: none;
 }
 
-.mtt {
-  margin-top: -24px;
-}
-
 .tarjetitas {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -800,6 +796,9 @@ img.dirigente {
   .zonas {
     display: block;
   }
+  .fixture-contenedor {
+    display: block;
+  }
 }
 @media (max-width: 850px) {
   .mini7 {
@@ -820,9 +819,6 @@ img.dirigente {
   .trofeos-contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  .fixture-contenedor {
-    display: block;
   }
   .fixture-racing {
     margin-bottom: 15px;
