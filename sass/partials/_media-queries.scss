@@ -223,21 +223,23 @@
 
 
     //***********posiciones.html****************//
-    .tabla-general,
-    .tabla-promedios {
-        width: auto;
 
-    }
-
-    .condiciones {
-        width: auto;
-    }
-
-    .zonas,
     .posicionesAnual {
-        font-size: 12px;
-    }
+        .tabla-general,
+        .tabla-promedios {
+            width: auto;
 
+        }
+
+        .condiciones {
+            width: auto;
+        }
+
+        .zonas,
+        .posicionesAnual {
+            font-size: 12px;
+        }
+    }
 
     //*************Goles.html*******************//
 

@@ -107,7 +107,7 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #4388ef;
+    background-color: $AzulCielo;
 }
 
 
@@ -152,6 +152,7 @@ h2.LPFArgentina {
 .titulos-posiciones {
     display: flex;
     justify-content: center;
+    text-align: center;
 
     h3 {
         font-size: 1.5rem;
@@ -166,14 +167,15 @@ h2.LPFArgentina {
     flex-flow: column;
     align-items: center;
     padding: 50px 0;
+    margin: 0 20px;
 
     .tabla-general,
     .tabla-promedios {
-        width: 50%;
+        width: auto;
     }
 
     .condiciones {
-        width: 50%;
+        width: 100%;
     }
 
     .clasificados2 {
@@ -193,6 +195,12 @@ h2.LPFArgentina {
         list-style-type: "🔻";
         margin-left: 20px;
         color: white;
+    }
+
+    table tbody tr {
+    td:nth-child(2) {
+        text-align: left;
+        }
     }
 }
 

@@ -481,6 +481,7 @@ h2.LPFArgentina {
 .titulos-posiciones {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .titulos-posiciones h3 {
   font-size: 1.5rem;
@@ -494,13 +495,14 @@ h2.LPFArgentina {
   flex-flow: column;
   align-items: center;
   padding: 50px 0;
+  margin: 0 20px;
 }
 .posicionesAnual .tabla-general,
 .posicionesAnual .tabla-promedios {
-  width: 50%;
+  width: auto;
 }
 .posicionesAnual .condiciones {
-  width: 50%;
+  width: 100%;
 }
 .posicionesAnual .clasificados2 {
   background-color: #98e19f;
@@ -517,6 +519,9 @@ h2.LPFArgentina {
   list-style-type: "🔻";
   margin-left: 20px;
   color: white;
+}
+.posicionesAnual table tbody tr td:nth-child(2) {
+  text-align: left;
 }
 
 .copaargentina img {
@@ -919,15 +924,15 @@ img.dirigente {
   .fixture-contenedor {
     font-size: 0.77rem;
   }
-  .tabla-general,
-  .tabla-promedios {
+  .posicionesAnual .tabla-general,
+  .posicionesAnual .tabla-promedios {
     width: auto;
   }
-  .condiciones {
+  .posicionesAnual .condiciones {
     width: auto;
   }
-  .zonas,
-  .posicionesAnual {
+  .posicionesAnual .zonas,
+  .posicionesAnual .posicionesAnual {
     font-size: 12px;
   }
   .goles_fecha {
