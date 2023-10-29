@@ -473,9 +473,11 @@
 //*##################################################################*//
 @media (max-width: 150px){
     //**********index.html**************//
-    .jugadores-contenedor {
-        display: grid;
-        grid-template-columns: 1fr;
+    .miniplantel {
+        .jugadores-contenedor {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
     }
 
      //*****************footer*************//

@@ -47,11 +47,10 @@
         display: grid;
         grid-template-columns: repeat(11, 1fr);
         padding: 5px;
-        background: linear-gradient(90deg, rgba(115,217,255,0.754) 20%, rgba(255,255,255,0.759) 50%, rgba(115,217,255,0.745) 80%);
+        background: linear-gradient(0deg, rgba(115,217,255,0.754) 20%, rgba(255,255,255,0.759) 50%, rgba(115,217,255,0.745) 80%);
         text-align: center;
         justify-content: space-between;
         border: 3px solid #2270e9;
-        gap: 2rem;
 
         .jugador {
             width: 100px;
