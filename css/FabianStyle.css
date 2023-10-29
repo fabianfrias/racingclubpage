@@ -930,8 +930,8 @@ img.dirigente {
   .posicionesAnual .condiciones {
     width: auto;
   }
-  .posicionesAnual .zonas,
-  .posicionesAnual .posicionesAnual {
+  .zonas,
+  .posicionesAnual {
     font-size: 12px;
   }
   .goles_fecha {
