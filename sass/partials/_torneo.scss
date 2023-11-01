@@ -110,6 +110,14 @@
     background-color: $AzulCielo;
 }
 
+.carousel-control-next {
+    right: 5%;
+}
+
+.carousel-control-prev {
+    left: 5%;
+}
+
 
 //***************************************POSICIONES HTML *********************************************//
 
@@ -176,6 +184,7 @@ h2.LPFArgentina {
 
     .condiciones {
         width: 100%;
+        max-width: 500px;
     }
 
     .clasificados2 {

@@ -445,6 +445,14 @@ label.icon__menu-label {
   background-color: #4388ef;
 }
 
+.carousel-control-next {
+  right: 5%;
+}
+
+.carousel-control-prev {
+  left: 5%;
+}
+
 h1.titulo-posiciones {
   padding: 20px;
 }
@@ -502,6 +510,7 @@ h2.LPFArgentina {
 }
 .posicionesAnual .condiciones {
   width: 100%;
+  max-width: 500px;
 }
 .posicionesAnual .clasificados2 {
   background-color: #98e19f;
@@ -814,6 +823,12 @@ img.dirigente {
   }
   .fixture-contenedor {
     display: block;
+  }
+  .carousel-control-next {
+    right: 0;
+  }
+  .carousel-control-prev {
+    left: 0;
   }
 }
 @media (max-width: 850px) {
