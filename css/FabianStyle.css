@@ -437,7 +437,7 @@ label.icon__menu-label {
 }
 
 .carousel {
-  padding: 100px;
+  padding: 0 100px 100px 100px;
 }
 
 .carousel-control-prev-icon,
