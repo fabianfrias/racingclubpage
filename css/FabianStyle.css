@@ -384,6 +384,15 @@ label.icon__menu-label {
 .fixture-fecha tbody tr td:nth-child(5n) {
   text-align: right;
 }
+.fixture-fecha td,
+.fixture-fecha th {
+  font-family: sans-serif;
+}
+
+.fixture-racing td,
+.fixture-racing th {
+  font-family: sans-serif;
+}
 
 .fixture-tbody-r {
   background-color: white;
