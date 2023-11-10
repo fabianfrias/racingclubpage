@@ -117,9 +117,15 @@
     padding: 0 100px 100px 100px;
 }
 
+.carousel-inner {
+    border: 5px solid #ffffff;
+}
+
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: $AzulCielo;
+    border: 2.5px solid $AzulMarino;
 }
 
 .carousel-control-next {
